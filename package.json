@@ -1,0 +1,105 @@
+{
+  "name": "start-ui-web",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Opinionated UI starter from the 🐻 BearStudio Team",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "run-p dev:*",
+    "dev:app": "vinxi dev",
+    "dev:smtp": "maildev -outgoing-host smtp.example.com --outgoing-secure --outgoing-user 'username' --outgoing-pass 'password'",
+    "build": "vinxi build",
+    "start": "vinxi start",
+    "pretty": "prettier -w .",
+    "lint": "run-p lint:*",
+    "lint:eslint": "cross-env SKIP_ENV_VALIDATION=true eslint ./app --fix",
+    "lint:ts": "tsc --noEmit",
+    "storybook": "storybook dev --no-open -p 6006",
+    "storybook:build": "storybook build"
+  },
+  "dependencies": {
+    "@radix-ui/react-checkbox": "1.1.4",
+    "@radix-ui/react-dialog": "1.1.6",
+    "@radix-ui/react-dropdown-menu": "2.1.6",
+    "@radix-ui/react-label": "2.1.2",
+    "@radix-ui/react-popover": "1.1.6",
+    "@radix-ui/react-progress": "1.1.2",
+    "@radix-ui/react-radio-group": "1.2.3",
+    "@radix-ui/react-select": "2.1.6",
+    "@radix-ui/react-slot": "1.1.2",
+    "@radix-ui/react-tabs": "1.1.3",
+    "@tanstack/react-query": "5.66.11",
+    "@tanstack/react-router": "1.111.7",
+    "@tanstack/start": "1.111.7",
+    "@uidotdev/usehooks": "2.4.1",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "cmdk": "1.0.0",
+    "date-fns": "4.1.0",
+    "lucide-react": "0.475.0",
+    "next-themes": "0.4.4",
+    "prettier": "3.5.2",
+    "react": "19.0.0",
+    "react-day-picker": "8.10.1",
+    "react-dom": "19.0.0",
+    "sonner": "2.0.1",
+    "tailwind-merge": "3.0.2",
+    "tailwindcss": "4.0.8",
+    "tailwindcss-animate": "1.0.7",
+    "vinxi": "0.5.3",
+    "zod": "3.24.2"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "3.2.4",
+    "@storybook/addon-essentials": "8.6.0",
+    "@storybook/addon-interactions": "8.6.0",
+    "@storybook/addon-onboarding": "8.6.0",
+    "@storybook/blocks": "8.6.0",
+    "@storybook/react": "8.6.0",
+    "@storybook/react-vite": "8.6.0",
+    "@storybook/test": "8.6.0",
+    "@tailwindcss/postcss": "4.0.9",
+    "@tanstack/router-devtools": "1.112.0",
+    "@types/react": "19.0.10",
+    "@types/react-dom": "19.0.4",
+    "@vitejs/plugin-react": "4.3.4",
+    "cross-env": "7.0.3",
+    "eslint": "9.21.0",
+    "eslint-plugin-simple-import-sort": "12.1.1",
+    "eslint-plugin-sonarjs": "3.0.2",
+    "eslint-plugin-storybook": "0.11.3",
+    "jiti": "2.4.2",
+    "maildev": "2.2.1",
+    "npm-run-all": "4.1.5",
+    "prettier-plugin-tailwindcss": "0.6.11",
+    "storybook": "8.6.0",
+    "storybook-dark-mode": "4.0.2",
+    "typescript": "5.7.3",
+    "typescript-eslint": "8.25.0",
+    "vite-tsconfig-paths": "5.1.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bearstudio/start-ui-web.git"
+  },
+  "author": {
+    "name": "Ivan Dalmet",
+    "email": "ivan@dalmet.fr",
+    "url": "https://github.com/ivan-dalmet"
+  },
+  "contributors": [
+    {
+      "name": "Yoann Fleury",
+      "email": "yoannfleurydev@gmail.com",
+      "url": "https://github.com/yoannfleurydev"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bearstudio/start-ui-web/issues"
+  },
+  "homepage": "https://github.com/bearstudio/start-ui-web#readme"
+}
