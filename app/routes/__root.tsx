@@ -7,9 +7,10 @@ import {
 import { TanStackRouterDevtools } from '@tanstack/router-devtools';
 import type { ReactNode } from 'react';
 
-import appCss from '@/styles/app.css?url';
 import { DefaultCatchBoundary } from '@/components/DefaultCatchBoundary';
 import { Toaster } from '@/components/ui/sonner';
+
+import appCss from '@/styles/app.css?url';
 export const Route = createRootRoute({
   head: () => ({
     meta: [
